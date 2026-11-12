@@ -5294,9 +5294,9 @@ TargetGroup:AddToggle("RagdollSnowballKick", { -- ?????????? ID
                -- ===============================
 				pcall(function()
 					local offset = Vector3.new(
-                       math.random(-30, 30) / 100,  -- ±0.3 ?? X
-                       math.random(-30, 30) / 100,  -- ±0.3 ?? Y
-                       math.random(-30, 30) / 100   -- ±0.3 ?? Z
+                       math.random(-30, 30) / 100,  -- Â±0.3 ?? X
+                       math.random(-30, 30) / 100,  -- Â±0.3 ?? Y
+                       math.random(-30, 30) / 100   -- Â±0.3 ?? Z
                    )
 					local spawnCFrame = torso.CFrame * CFrame.new(offset)
 					SpawnRemote:InvokeServer(
@@ -6978,7 +6978,7 @@ MiscGroup:AddSlider("FOVSlider", {
 	Min = 1,
 	Max = 120,
 	Rounding = 0,
-	Suffix = "°",
+	Suffix = "Â°",
 	Callback = function(value)
 		game.Workspace.CurrentCamera.FieldOfView = value
 	end
@@ -32096,4 +32096,4 @@ end); loadprogress("last")
 task.spawn(function() rconsoledestroy() end)
 Ld.field:LoadConfiguration()
 
-By Beluchi
+--By Beluchi
